@@ -1,0 +1,14 @@
+﻿生成启动时间为 2021/7/12 10:11:39。
+     1>项目“C:\code 代码\test-7-12\test-7-12\test-7-12.vcxproj”在节点 2 上(Build 个目标)。
+     1>ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /sdl /Od /Oy- /D _MBCS /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TC /analyze- /errorReport:prompt test.c
+         test.c
+     1>c:\code 代码\test-7-12\test-7-12\test.c(45): error C2065: “p”: 未声明的标识符
+     1>c:\code 代码\test-7-12\test-7-12\test.c(45): error C2100: 非法的间接寻址
+     1>c:\code 代码\test-7-12\test-7-12\test.c(46): error C2065: “p”: 未声明的标识符
+     1>c:\code 代码\test-7-12\test-7-12\test.c(46): error C2100: 非法的间接寻址
+     1>已完成生成项目“C:\code 代码\test-7-12\test-7-12\test-7-12.vcxproj”(Build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:00.39
