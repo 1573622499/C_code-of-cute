@@ -42,7 +42,7 @@ void Display_Board(char board[ROW][COL], int row, int col)
 		printf("\n");
 
 	}
-	void Playe_rMove(char board[ROW][COL], int row, int col)
+void Play_Move(char board[ROW][COL], int row, int col)
 	{
 		int x = 0;
 		int y = 0;
@@ -51,7 +51,7 @@ void Display_Board(char board[ROW][COL], int row, int col)
 			printf("请选择:>");
 			scanf("%d%d", &x, &y);
 			if (x >= 1 && x <= row&&y >= 1 && y <= col){
-				if (board[x - 1][y - 1]==' '){
+				if (board[x - 1][y - 1] == ' '){
 					board[x - 1][y - 1] = '*';
 					break;
 				}
@@ -65,11 +65,9 @@ void Display_Board(char board[ROW][COL], int row, int col)
 			}
 		}
 
-
 	}
-
 	
-	void Computer_Move(char board[ROW][COL], int row, int col)
+void Computer_Move(char board[ROW][COL], int row, int col)
 	{
 		int x = 0;
 		int y = 0;
@@ -83,7 +81,7 @@ void Display_Board(char board[ROW][COL], int row, int col)
 			}
 		}
 
-
+		
 	}
 
 	int Is_Full(char board[ROW][COL], int row, int col)
@@ -94,11 +92,10 @@ void Display_Board(char board[ROW][COL], int row, int col)
 			for (j = 0; j < col; j++){
 
 				if (board[i][j] == ' '){
-					return 0;//没满
+  					return 0;//没满
 				}
 			}
-
-		}
+   		}
 		return 1;//满了
 
 
@@ -114,7 +111,7 @@ void Display_Board(char board[ROW][COL], int row, int col)
 
 
 }
-	char Is_win(char board[ROW][COL], int row, int col)
+char Is_win(char board[ROW][COL], int row, int col)
 	{
 		int i = 0;
 		int j = 0;
